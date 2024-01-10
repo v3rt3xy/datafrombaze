@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+    <title>Exolve API example</title>
+  </head>
+  <body class="page">
+    <div class="container">
+      <h4> {{ error }} </h4>
+        <form id="form" action="/" method="post">
+          <div class="row">
+            <div class="col-25">
+              <label for="number">Номер отправителя / Имя отправителя</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="number" name="number" placeholder="Введите номер / имя отправителя..." required minlength="1" maxlength="15" value="79587329155">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="destination">Номер получателя</label>
+            </div>
+            <div class="col-75">
+              <input type="tel" id="destination" name="destination" placeholder="Введите номер получателя..." required minlength="11" maxlength="11" value="79612554050">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="text">Текст сообщения</label>
+            </div>
+            <div class="col-75">
+              <textarea id="text" name="text" placeholder="Напишите что-нибудь..." style="height:200px" value="test message"></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <button type="submit" class="button">Отправить сообщение</button>
+          </div>
+        </form>
+      </div>
+
+  </body>
+</html>

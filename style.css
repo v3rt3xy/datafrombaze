@@ -1,0 +1,120 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #18191c;
+  color: #FFFFFF;
+  font-family: 'Kanit', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+h4 {
+    color: red;
+    margin-bottom: 2vh;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.input, .button {
+  width: 350px;
+}
+
+.input {
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  padding: 10px 15px;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 300;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.input:focus {
+  border-color: #FFD829;
+  outline: none;
+}
+
+.button {
+  display: block;
+  min-width: 210px;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  margin-left: auto;
+  padding: 9px 15px;
+  color: #000000;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: inherit;
+  transition: background-color 0.2s linear;
+}
+
+.button:hover {
+  background-color: #FF0032;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.button:focus-visible {
+  border: 2px solid #ffffff;
+  outline: none;
+}
+
+.button:focus {
+  border: 2px solid #ffffff;
+  outline: none;
+}
+
+.button-yellow {
+  background-color: #FFD829;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.hidden {
+  display:none;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 30px;
+  }
+
+  label {
+    display: block;
+  }
+
+  .input, .button {
+    display: block;
+    width: 100%;
+  }
+}
